@@ -1,6 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+//import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
@@ -13,11 +13,51 @@ import TheWelcome from './components/TheWelcome.vue'
   </header>
 
   <main>
-    <!-- <TheWelcome /> -->
+    <!--   <TheWelcome /> -->
+    <!-- <div style="width:50%"> -->
+    <div style="max-width:675px; margin: auto;">  <!-- images are restricted to this size -->
+
+      <v-carousel cycle="true"> <!-- height is on here -->
+        <v-carousel-item
+          src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+          cover
+        ></v-carousel-item>
+
+        <v-carousel-item
+          src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+          cover
+        ></v-carousel-item>
+
+        <v-carousel-item
+          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          cover
+        ></v-carousel-item>
+      </v-carousel>
+
+      <v-carousel cycle="true"> <!-- height is on here -->
+        <v-carousel-item
+          src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+          cover
+        ></v-carousel-item>
+
+        <v-carousel-item
+          src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+          cover
+        ></v-carousel-item>
+
+        <v-carousel-item
+          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          cover
+        ></v-carousel-item>
+      </v-carousel>
+    </div>
+
   </main>
 </template>
 
+<!--
 <style scoped>
+
 header {
   line-height: 1.5;
 }
@@ -45,3 +85,4 @@ header {
   }
 }
 </style>
+-->
