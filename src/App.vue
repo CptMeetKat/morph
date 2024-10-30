@@ -6,7 +6,7 @@ import ProjectReel from './components/ProjectReel.vue'
   <v-app>
     <header>
       <v-container>
-        <v-app-bar scroll-behavior="hide" scroll-threshold="0">
+        <v-app-bar scroll-behavior="hide" scroll-threshold="1">
         <template v-slot:prepend>
             <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
           </template>
