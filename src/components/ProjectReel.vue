@@ -2,7 +2,7 @@
 </script>
 
 <template>
-      <div class="reel" >
+      <div class="reel-card" >
         <div>
           <v-carousel :cycle=true height="500px"> <!-- height is on here -->
             <v-carousel-item
@@ -34,7 +34,7 @@
   padding: 1em;
 }
 
-.reel
+.reel-card
 {
   align-content: center;
   height:100vh;
