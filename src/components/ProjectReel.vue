@@ -28,7 +28,7 @@
           </v-carousel>
         </div>
 
-        <div>
+        <div class="reel-summary">
           <div> <b> JAVA, Spring boot, APIs </b> </div>
           <div> Created a weather forecasting app in Java that integrates with public APIs to display real-time weather data and seven-day forecasts, featuring a clean, intuitive GUI built with JavaFX. </div>
         </div>
@@ -36,4 +36,7 @@
 </template>
 
 <style scoped>
+.reel-summary {
+  padding: 1em;
+}
 </style>
