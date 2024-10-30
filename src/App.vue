@@ -3,15 +3,28 @@ import ProjectReel from './components/ProjectReel.vue'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
-    </div>
-  </header>
+  <v-app>
+    <header>
+      <v-container>
+        <v-app-bar scroll-behavior="hide" scroll-threshold="0">
+        <template v-slot:prepend>
+            <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+          </template>
 
-  <main>
-     <div style="min-width: 500px; max-width:675px; margin: auto;">
-      <ProjectReel />
-    </div>
-  </main>
+          <v-app-bar-title>Morph</v-app-bar-title>
+        </v-app-bar>
+      </v-container>
+    </header>
+
+    <main>
+      <div style="min-width: 500px; max-width:675px; margin: auto;">
+        <ProjectReel />
+        <ProjectReel />
+      </div>
+    </main>
+  </v-app>
 </template>
+
+
+<style scope>
+</style>
