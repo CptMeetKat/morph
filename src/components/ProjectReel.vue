@@ -4,7 +4,7 @@
 <template>
       <div class="reel" >
         <div>
-          <v-carousel cycle="true" height="500px"> <!-- height is on here -->
+          <v-carousel :cycle=true height="500px"> <!-- height is on here -->
             <v-carousel-item
               src="https://fastly.picsum.photos/id/907/500/500.jpg?hmac=1JG7-2YxQq4FkxYTIwNTsXH1FJw5WZoGoXCTCONnoJw"
               cover
