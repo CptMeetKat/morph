@@ -2,7 +2,7 @@
 </script>
 
 <template>
-      <div>
+      <div class="reel" >
         <div>
           <v-carousel cycle="true" height="500px"> <!-- height is on here -->
             <v-carousel-item
@@ -32,5 +32,11 @@
 <style scoped>
 .reel-summary {
   padding: 1em;
+}
+
+.reel
+{
+  align-content: center;
+  height:100vh;
 }
 </style>
