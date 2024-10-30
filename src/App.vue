@@ -16,10 +16,12 @@ import ProjectReel from './components/ProjectReel.vue'
       </v-container>
     </header>
 
-    <main>
+    <main class="reel">
       <div style="min-width: 500px; max-width:675px; margin: auto;">
-        <ProjectReel />
-        <ProjectReel />
+        <ProjectReel class="reel-item" />
+        <ProjectReel class="reel-item" />
+        <ProjectReel class="reel-item" />
+        <ProjectReel class="reel-item" />
       </div>
     </main>
   </v-app>
@@ -27,4 +29,17 @@ import ProjectReel from './components/ProjectReel.vue'
 
 
 <style scoped>
+
+.reel
+{
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.reel-item
+{
+  scroll-snap-align: start;
+}
+
 </style>
