@@ -26,5 +26,5 @@ import ProjectReel from './components/ProjectReel.vue'
 </template>
 
 
-<style scope>
+<style scoped>
 </style>
