@@ -16,8 +16,8 @@ import ProjectReel from './components/ProjectReel.vue'
       </v-container>
     </header>
 
-    <main class="reel">
-      <div style="min-width: 500px; max-width:675px; margin: auto;">
+    <main class="reel hidden-scroll">
+      <div style="min-width: 412; max-width:675px; margin: auto;">
         <ProjectReel class="reel-item" />
         <ProjectReel class="reel-item" />
         <ProjectReel class="reel-item" />
@@ -35,6 +35,14 @@ import ProjectReel from './components/ProjectReel.vue'
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.reel-scroll::-webkit-scrollbar {
+    display: none;
 }
 
 .reel-item
