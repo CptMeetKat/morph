@@ -1,5 +1,6 @@
 <script setup>
 import ProjectReel from './components/ProjectReel.vue'
+import Overlay from './components/Overlay.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import ProjectReel from './components/ProjectReel.vue'
     </header>
 
     <main class="reel hidden-scroll">
+      <Overlay />
       <div style="min-width: 412; max-width:675px; margin: auto;">
         <ProjectReel class="reel-item" />
         <ProjectReel class="reel-item" />
